@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { AnimatePresence, motion, type Variants } from "motion/react";
 import { PROJECTS } from "@/content/projects";
 
@@ -35,6 +36,7 @@ const itemVariants: Variants = {
 
 export function Menu() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     if (!open) return;
@@ -53,6 +55,22 @@ export function Menu() {
   const close = () => {
     document.documentElement.style.overflow = "";
     setOpen(false);
+  };
+
+  const handleSectionClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string,
+  ) => {
+    const [route, hash] = href.split("#");
+    const targetPath = route || "/";
+    close();
+    if (pathname === targetPath && hash) {
+      e.preventDefault();
+      setTimeout(() => {
+        const el = document.getElementById(hash);
+        el?.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 120);
+    }
   };
 
   return (
@@ -97,7 +115,7 @@ export function Menu() {
                   <motion.li key={s.href} variants={itemVariants}>
                     <Link
                       href={s.href}
-                      onClick={close}
+                      onClick={(e) => handleSectionClick(e, s.href)}
                       className="group inline-flex items-baseline gap-6"
                       data-cursor-label={s.name}
                     >
