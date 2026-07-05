@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Instrument_Serif, Geist_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import { LenisProvider } from "@/components/LenisProvider";
 import { GrainOverlay } from "@/components/GrainOverlay";
@@ -45,6 +46,7 @@ export default function RootLayout({
         <Cursor />
         <HeroLoader />
         <Menu />
+        <Analytics />
       </body>
     </html>
   );

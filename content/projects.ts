@@ -3,7 +3,7 @@ export type ReelPanelKind = "metrics" | "diagram" | "pullquote" | "statement";
 export type WorkPanel =
   | { kind: "pullquote"; text: string }
   | { kind: "numbers"; items: string[] }
-  | { kind: "screenshot"; caption: string; placeholder?: true }
+  | { kind: "screenshot"; caption: string; src?: string; placeholder?: true }
   | { kind: "diagram"; caption: string; steps: string[] };
 
 export type Project = {
@@ -80,7 +80,7 @@ export const PROJECTS: Project[] = [
         {
           kind: "screenshot",
           caption: "Journal entry — bilingual feedback, per-user AI toggle",
-          placeholder: true,
+          src: "/projects/ai-english-journal.png",
         },
       ],
       reflection:
@@ -140,7 +140,7 @@ export const PROJECTS: Project[] = [
         {
           kind: "screenshot",
           caption: "Agent queue — tickets, priority, assignment",
-          placeholder: true,
+          src: "/projects/support-ticketing-system.png",
         },
       ],
       reflection:
@@ -158,8 +158,10 @@ export const PROJECTS: Project[] = [
       { label: "GitHub", href: "https://github.com/HtetLin27/lms_system" },
     ],
     reel: {
-      kind: "statement",
-      lines: ["Not a course.", "A learning system, built end-to-end."],
+      kind: "diagram",
+      oneLiner:
+        "A full-stack learning platform with role-based access, signed-URL video streaming, and server-side quiz scoring — built from the schema up.",
+      flow: ["Student", "JWT", "Role", "Course", "Quiz", "Cert"],
     },
     study: {
       problem: [
@@ -191,7 +193,7 @@ export const PROJECTS: Project[] = [
         {
           kind: "screenshot",
           caption: "Instructor dashboard — course draft to published pipeline",
-          placeholder: true,
+          src: "/projects/lms-system.png",
         },
       ],
       reflection:
@@ -247,7 +249,7 @@ export const PROJECTS: Project[] = [
         {
           kind: "screenshot",
           caption: "Admin panel — portfolios, ideas, users, timelines",
-          placeholder: true,
+          src: "/projects/opom-portfolio.png",
         },
       ],
       reflection:

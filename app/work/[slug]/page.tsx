@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import {
   PROJECTS,
   getNextProject,
@@ -179,13 +180,23 @@ function WorkPanelRender({ panel }: { panel: WorkPanel }) {
       return (
         <div className="flex min-h-[90vh] w-full items-center px-6 md:px-12">
           <figure className="mx-auto w-full max-w-6xl">
-            <div className="relative aspect-video w-full border border-bone/20 bg-ink">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="flex flex-col items-center gap-2 font-mono text-[11px] uppercase tracking-[0.14em] text-muted">
-                  <span>Screenshot</span>
-                  <span className="text-bone/40">placeholder</span>
+            <div className="relative aspect-video w-full overflow-hidden border border-bone/20 bg-ink">
+              {panel.src ? (
+                <Image
+                  src={panel.src}
+                  alt={panel.caption}
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 1200px"
+                  className="object-cover"
+                />
+              ) : (
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="flex flex-col items-center gap-2 font-mono text-[11px] uppercase tracking-[0.14em] text-muted">
+                    <span>Screenshot</span>
+                    <span className="text-bone/40">placeholder</span>
+                  </div>
                 </div>
-              </div>
+              )}
             </div>
             <figcaption className="mt-4 font-mono text-[11px] uppercase tracking-[0.14em] text-muted">
               {panel.caption}

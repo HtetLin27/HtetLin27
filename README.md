@@ -1,37 +1,31 @@
 # Hi, I'm Htet Lin Ko 👋
 
-**Senior Frontend Developer | Full Stack Developer in Progress**
+**Senior Frontend Developer at Better HR · Full-stack engineer**
 
-I build modern, scalable web applications with a strong focus on clean UI, performance, maintainable architecture, and real business workflows.
+I ship production HR SaaS by day and build end-to-end systems on the side — API to database, auth to UI. Four years into a multi-tenant HR platform used across multiple countries, currently leading the frontend migration from a legacy Vue / Nuxt app to a modern React, TypeScript, and Vite stack — with clients live on both stacks in parallel.
 
-Currently, I work as a **Senior Frontend Developer at Better HR**, where I build production features for HR, recruitment, appraisal, customer management, and job platform products.
+Before software, I worked as a Network Engineer at Frontiir. That background taught me how to troubleshoot systems and reason about where information gets stuck — the same instinct I use today in a Postgres schema or a JWT round-trip.
 
-I started my career as a Network Engineer, then moved into software development — this background helps me think deeply about systems, reliability, data flow, and user experience.
+🌐 Portfolio: https://www.htetlinko.com
 
 ---
 
 ## 🚀 What I Do
 
-- Build responsive and scalable frontend applications
-- Develop production features using Vue, Nuxt, React, Next.js, and Tailwind CSS
-- Integrate GraphQL and REST APIs into complex business workflows
-- Design reusable UI components and frontend architecture
-- Improve performance, accessibility, and maintainability
-- Learn and build full-stack systems with Node.js, Express, MongoDB, PostgreSQL, Prisma, and Sequelize
+- Ship production frontend features in a multi-tenant HR SaaS — payroll, recruitment, appraisals, customer management, job platforms, marketing sites
+- Lead frontend architecture on a Vue / Nuxt → React 19 migration with clients live on both stacks
+- Build full-stack side projects — schema, API, auth, permissions, and UI, end to end
+- Design permission models, GraphQL contracts, and i18n workflows that survive real production use
+- Integrate AI (structured JSON responses, per-user data controls) into learning products
 
 ---
 
 ## 🧩 Current Focus
 
-I am currently improving my full-stack development skills by building real-world projects that cover:
-
-- Authentication and authorization
-- REST API design
-- Database modeling
-- Server-side architecture
-- Real-time features
-- Error handling and monitoring
-- Scalable frontend architecture
+- Leading the Better HR frontend migration to React 19 + TanStack + shadcn/ui, keeping the legacy Vue app stable for existing clients
+- Full-stack side projects covering RBAC, realtime, cloud file storage, video processing, and AI integration
+- System design and backend architecture — schema shape, contract design, permission topology
+- Learning and building with Claude Code and AI agents in real workflows
 
 ---
 
@@ -41,9 +35,12 @@ I am currently improving my full-stack development skills by building real-world
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs)
 ![Nuxt.js](https://img.shields.io/badge/Nuxt.js-00DC82?style=for-the-badge&logo=nuxtdotjs)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css)
+![TanStack](https://img.shields.io/badge/TanStack-FF4154?style=for-the-badge&logo=react-query&logoColor=white)
 
 ### Backend
 
@@ -51,73 +48,104 @@ I am currently improving my full-stack development skills by building real-world
 ![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express)
 ![REST API](https://img.shields.io/badge/REST_API-FF6B6B?style=for-the-badge)
 ![GraphQL](https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&logo=graphql)
+![Socket.IO](https://img.shields.io/badge/Socket.IO-010101?style=for-the-badge&logo=socketdotio)
 
-### Database & Tools
+### Database & Storage
 
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql)
-![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb)
-![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma)
 ![Sequelize](https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=sequelize)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
+![Cloudflare](https://img.shields.io/badge/Cloudflare_R2-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)
+
+### DevOps & Tools
+
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git)
+![GitLab CI](https://img.shields.io/badge/GitLab_CI-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel)
 
 ---
 
-## 💼 Professional Experience Highlights
+## 💼 Better HR — Senior Frontend Developer
 
-### Better HR
+Four years at a multi-tenant HR SaaS platform used across multiple countries. Promoted from Junior to Senior after taking ownership of complex frontend modules and frontend architecture decisions.
 
-I have worked on multiple production-level HR and recruitment products, including:
+**React Migration Platform (current)**
+Leading the migration from legacy Vue 2 / Nuxt to React 19 + TypeScript + Vite. Shipping payroll, employees, leaves, attendance, KPI, performance appraisal, and recruitment / ATS flows with shared permission logic, i18n, and multi-country payroll (Pusher realtime, FX handling). Stack: TanStack Router / Query / Form / Table, Apollo Client, Tailwind v4, shadcn/ui, Storybook, Vitest.
 
-- **Job Platform** — job listing, search, application, employer dashboard, and user flows
-- **Applicant Tracking System** — hiring pipeline, candidate profile, interview scheduling, offers, and role-based access
-- **Performance Appraisal System** — appraisal creation, review rounds, scoring, reviewer assignment, and published appraisal views
-- **Customer Management Tools** — customer lifecycle, renewals, invoices, ATS credits, reporting, and currency settings
-- **Expense Management System** — expense submission, approval workflow, role-based access, and responsive UI
+**Internal Customer Management Platform (Nuxt 3 / Vue 3)**
+Led frontend architecture for ~15 pages of customer lifecycle, contracts, expense workflow, file upload, and reporting. CASL permission system with route guards. Microsoft OAuth SSO, Xero accounting sync, and secure bank payment / salary disbursement from the frontend side.
+
+**Marketing Website (Next.js)**
+14-locale i18n with geo-routing and 100+ localized pages. SEO infrastructure — hreflang, JSON-LD, dynamic sitemap, `llms.txt` for AI crawlers. GitLab CI/CD → AWS S3 + CloudFront.
+
+**Better Jobs Platform (Nuxt 3 / Vue 3)**
+Candidate-facing job portal serving 7 countries. 5 GraphQL services, SSR auth, realtime messaging via Laravel Echo / Pusher, Firebase push notifications.
+
+**As Junior — Payroll & ATS**
+Led the frontend Payroll module (default, multi-country, settings, policy workflows) with country rollouts for Myanmar, Sri Lanka, and Thailand. Built the Applicant Tracking System from scratch — candidate pipeline, CV preview, recruiter workflows, public embeddable job listings. Delivered payroll features with zero reopened production bugs.
 
 ---
 
 ## 📌 Featured Projects
 
-### Developer Monitoring & Error Tracking Platform
+### 📝 AI English Journal
 
-A mini Sentry-style platform for tracking frontend errors, API errors, user sessions, stack traces, and performance events.
+Bilingual AI journaling app for English learners — writing prompts, grammar feedback, and draft help in English and Myanmar.
 
-**Focus:** Full-stack architecture, SDK design, event ingestion, dashboard UI, database design, and monitoring workflows.
+- Next.js + TypeScript + Supabase PostgreSQL with Row Level Security
+- Structured JSON responses from Google Gemini for grammar feedback, prompts, and drafts
+- Per-user AI toggle so users control whether journal content is shared with the model
+- shadcn/ui + Tailwind CSS
 
-Tech:
-`React` `Node.js` `Express.js` `PostgreSQL` `Prisma` `Redis` `Tailwind CSS`
-
----
-
-### Team Task & Support Hub
-
-A full-stack internal support/task management system with tasks, tickets, comments, roles, pagination, and API design patterns.
-
-**Focus:** REST APIs, authentication, database modeling, server state management, and dashboard UX.
-
-Tech:
-`Next.js` `TypeScript` `PostgreSQL` `Prisma` `TanStack Query` `Zustand` `Tailwind CSS`
+**Live:** https://vct-ai-english-journal.vercel.app/
+**GitHub:** https://github.com/HtetLin27/vct-ai-english-journal
 
 ---
 
-### API Debugger
+### 🎫 Customer Support Ticketing System
 
-A mini Postman-style developer tool for testing API requests, viewing responses, managing headers, and understanding client-server communication.
+Full-stack support desk with three roles, a real ticket queue, and realtime updates — REST-first, realtime as an overlay.
 
-**Focus:** API request lifecycle, route handlers, request/response state, UI composition, and developer experience.
+- React + Node.js + Express + PostgreSQL + Sequelize
+- JWT auth with role-based permissions (customer / agent / admin)
+- Socket.IO for live ticket updates while REST APIs stay the source of truth
+- Docker Compose with seed data that mimics a real support queue
 
-Tech:
-`Next.js` `TypeScript` `Tailwind CSS` `REST API`
+**GitHub:** https://github.com/HtetLin27/customer_support_ticketing_system
 
 ---
 
-### MoviePilot Lab
+### 📚 Learning Management System
 
-A movie discovery application built with the MERN stack to practice full-stack application structure, API integration, authentication, and deployment.
+Full-stack LMS — role-based access, signed-URL video streaming, server-side quiz scoring, generated certificates. Built from the schema up.
 
-Tech:
-`React` `Node.js` `Express.js` `MongoDB` `Tailwind CSS`
+- Node.js + Express + PostgreSQL — 11 tables, 3 roles (student / instructor / admin)
+- Sequelize ORM, Multer uploads, FFmpeg for video processing
+- Cloudflare R2 storage with signed URLs so video links can't be shared past expiry
+- Server-side quiz scoring — no client-side tampering possible
+- PDFKit certificate generation on progress completion
+- React + Vite + Zustand + TanStack Query on the frontend, shadcn/ui + Tailwind CSS
+- Docker Compose for local development
+
+**GitHub:** https://github.com/HtetLin27/lms_system
+
+---
+
+### 🧑‍💻 OPOM Portfolio Platform
+
+Community portfolio and team-collaboration platform for the One Project One Month community. Led the frontend as part of a small team, and mentored other developers working on the codebase.
+
+- React 19 + TypeScript + Vite, React Router, TanStack Query, Zustand
+- Full auth flows — email/password, OTP verification, forgot/reset password, GitHub + Google OAuth
+- Axios refresh-token retry interceptor that queues in-flight calls during token refresh and auto-redirects banned users (HTTP 451)
+- Zustand store backed by AES-encrypted localStorage (SHA-256 hashed keys)
+- Role-based routing (USER / ADMIN) with lazy-loaded route modules
+- Radix UI + Tailwind v4 + React Hook Form + Zod, Chart.js dashboards for admin analytics
+
+**GitHub:** https://github.com/one-project-one-month/1P1M_Portfolio_React
 
 ---
 
@@ -129,23 +157,29 @@ Tech:
 
 ---
 
+## 🎓 Certifications
+
+- **Anthropic Claude 101** — [Verify](https://verify.skilljar.com/c/qofoukq9isre)
+- **Anthropic Claude Code 101** — [Verify](https://verify.skilljar.com/c/fvxd7z36pdvf)
+- **Meta Front-End Developer Professional Certificate** — Coursera
+- **CS50x: Introduction to Computer Science** — Harvard University
+- **Cisco Routing and Switching Certification**
+
+---
+
 ## 🌱 Learning Direction
 
-I am currently focused on becoming a stronger full-stack developer by studying:
-
-- System design fundamentals
-- Backend architecture
-- Database design
-- Design patterns
-- Authentication and authorization
-- Performance optimization
-- Real-world software architecture
+- System design and backend architecture
+- Database design and schema shape
+- Permission models and RBAC topology
+- Real-world production concerns — i18n, migration strategy, contract stability
+- AI integration patterns — structured outputs, per-user data controls, agent-assisted workflows
 
 ---
 
 ## 📫 Connect With Me
 
-- Portfolio: https://www.htetlinko.com
-- LinkedIn: https://www.linkedin.com/in/htet-lin-ko-411b02204
-- GitHub: https://github.com/HtetLin27
-- Email: htetlinko.dev@gmail.com
+- 🌐 Portfolio: https://www.htetlinko.com
+- 💼 LinkedIn: https://www.linkedin.com/in/htet-lin-ko-411b02204
+- 🐙 GitHub: https://github.com/HtetLin27
+- 📧 Email: htetlinko.dev@gmail.com

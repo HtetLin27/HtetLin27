@@ -20,6 +20,7 @@ export function WorkReel() {
   const markRef = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState(0);
   const [reducedMotion, setReducedMotion] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -30,7 +31,15 @@ export function WorkReel() {
   }, []);
 
   useEffect(() => {
-    if (reducedMotion) return;
+    const mq = window.matchMedia("(max-width: 768px)");
+    setIsMobile(mq.matches);
+    const onChange = () => setIsMobile(mq.matches);
+    mq.addEventListener("change", onChange);
+    return () => mq.removeEventListener("change", onChange);
+  }, []);
+
+  useEffect(() => {
+    if (reducedMotion || isMobile) return;
     const section = sectionRef.current;
     const track = trackRef.current;
     if (!section || !track) return;
@@ -66,9 +75,24 @@ export function WorkReel() {
     return () => {
       st.kill();
     };
-  }, [reducedMotion]);
+  }, [reducedMotion, isMobile]);
 
   const displayIndex = Math.min(activeIndex + 1, PROJECTS.length);
+
+  if (isMobile) {
+    return (
+      <section id="work" className="relative w-full overflow-hidden">
+        <div className="border-t border-muted/20 px-6 pt-8 pb-4 font-mono text-[11px] uppercase tracking-[0.14em] text-muted">
+          02 · Work
+        </div>
+        <div className="divide-y divide-muted/20">
+          {PROJECTS.map((project) => (
+            <MobilePanel key={project.slug} project={project} />
+          ))}
+        </div>
+      </section>
+    );
+  }
 
   if (reducedMotion) {
     return (
@@ -324,3 +348,48 @@ function StatementComposition({ project }: { project: Project }) {
   );
 }
 
+/* ------------------------------- Mobile --------------------------------- */
+function getReelSummary(project: Project): string {
+  const r = project.reel;
+  if (r.kind === "metrics" || r.kind === "diagram") return r.oneLiner;
+  if (r.kind === "pullquote") return r.quote;
+  return `${r.lines[0]} ${r.lines[1]}`;
+}
+
+function MobilePanel({ project }: { project: Project }) {
+  const summary = getReelSummary(project);
+  return (
+    <Link
+      href={`/work/${project.slug}`}
+      data-cursor-label={`${project.number} · ${project.name}`}
+      className="group relative flex w-full flex-col gap-8 overflow-hidden px-6 py-16"
+    >
+      <div className="flex flex-col gap-1 font-mono text-[11px] uppercase tracking-[0.14em] text-muted">
+        <span>{project.client}</span>
+        <span>
+          {project.role} · {project.timeframe}
+        </span>
+      </div>
+
+      <span
+        style={{ viewTransitionName: `project-number-${project.slug}` }}
+        className="font-serif leading-[0.85] text-bone text-[36vw] select-none"
+      >
+        {project.number}
+      </span>
+
+      <div className="flex flex-col gap-4">
+        <h3 className="font-serif text-3xl leading-tight text-bone">
+          {project.name}
+        </h3>
+        <p className="font-sans text-base leading-relaxed text-bone/80">
+          {summary}
+        </p>
+      </div>
+
+      <span className="mt-2 font-mono text-[11px] uppercase tracking-[0.14em] text-muted">
+        View case study →
+      </span>
+    </Link>
+  );
+}
