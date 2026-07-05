@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #fcf9ec;
+  --color-bone: #0b0b0c;
+  --color-muted: #6b665c;
+  --color-ink: #050505;
+
+  --font-serif: var(--font-instrument-serif);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-geist-mono);
+}
+
+html,
+body {
+  background: var(--color-bg);
+  color: var(--color-bone);
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+html.cursor-custom,
+html.cursor-custom * {
+  cursor: none !important;
+}
