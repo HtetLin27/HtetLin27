@@ -24,10 +24,28 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl = "https://www.htetlinko.com";
+const siteTitle = "Htet Lin Ko — Full-stack engineer";
+const siteDescription =
+  "Portfolio of Htet Lin Ko, full-stack engineer. Shipping HR SaaS at Better HR and building end-to-end systems on the side.";
+
 export const metadata: Metadata = {
-  title: "Htet Lin Ko — Full-stack engineer",
-  description:
-    "Portfolio of Htet Lin Ko, full-stack engineer. Shipping HR SaaS at Better HR and building end-to-end systems on the side.",
+  metadataBase: new URL(siteUrl),
+  title: siteTitle,
+  description: siteDescription,
+  openGraph: {
+    type: "website",
+    url: siteUrl,
+    siteName: "Htet Lin Ko",
+    title: siteTitle,
+    description: siteDescription,
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteTitle,
+    description: siteDescription,
+  },
 };
 
 export default function RootLayout({
