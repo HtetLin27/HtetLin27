@@ -66,7 +66,7 @@ export function SkillsPath() {
           variants={itemVariants}
           className="mb-16 font-mono text-[11px] uppercase tracking-[0.14em] text-muted sm:mb-24"
         >
-          03 · System — Technologies
+          04 · System — Technologies
         </motion.div>
 
         <ul className="flex flex-col divide-y divide-muted/20 border-y border-muted/20">

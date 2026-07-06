@@ -8,10 +8,11 @@ import { PROJECTS } from "@/content/projects";
 
 const SECTIONS = [
   { number: "01", name: "About", href: "/#about" },
-  { number: "02", name: "Work", href: "/#work" },
-  { number: "03", name: "System", href: "/#system" },
-  { number: "04", name: "Credentials", href: "/#credentials" },
-  { number: "05", name: "Contact", href: "/#contact" },
+  { number: "02", name: "Experience", href: "/#experience" },
+  { number: "03", name: "Work", href: "/#work" },
+  { number: "04", name: "System", href: "/#system" },
+  { number: "05", name: "Credentials", href: "/#credentials" },
+  { number: "06", name: "Contact", href: "/#contact" },
 ];
 
 const overlayVariants: Variants = {

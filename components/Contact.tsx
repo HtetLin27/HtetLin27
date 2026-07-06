@@ -17,7 +17,7 @@ export function Contact() {
       className="relative flex h-screen w-full flex-col items-center justify-center px-6 md:px-12"
     >
       <div className="absolute top-6 left-6 font-mono text-[11px] uppercase tracking-[0.14em] text-muted">
-        05 · Contact
+        06 · Contact
       </div>
       <p className="font-serif text-[clamp(5rem,18vw,16rem)] leading-none italic text-bone">
         available

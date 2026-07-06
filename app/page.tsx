@@ -1,6 +1,7 @@
 import { About } from "@/components/About";
 import { Contact } from "@/components/Contact";
 import { Credentials } from "@/components/Credentials";
+import { Experience } from "@/components/Experience";
 import { HeroName } from "@/components/HeroName";
 import { HeroTagline } from "@/components/HeroTagline";
 import { Mark } from "@/components/Mark";
@@ -46,6 +47,7 @@ export default function Home() {
       </section>
 
       <About />
+      <Experience />
       <WorkReel />
       <SkillsPath />
       <Credentials />

@@ -2,7 +2,7 @@
 
 **Senior Frontend Developer at Better HR · Full-stack engineer**
 
-I ship production HR SaaS by day and build end-to-end systems on the side — API to database, auth to UI. Four years into a multi-tenant HR platform used across multiple countries, currently leading the frontend migration from a legacy Vue / Nuxt app to a modern React, TypeScript, and Vite stack — with clients live on both stacks in parallel.
+I ship production HR SaaS by day and build end-to-end systems on the side — API to database, auth to UI. Four years into a multi-tenant HR platform used across multiple countries, currently shipping features on the frontend migration from a legacy Vue / Nuxt app to a modern React, TypeScript, and Vite stack.
 
 Before software, I worked as a Network Engineer at Frontiir. That background taught me how to troubleshoot systems and reason about where information gets stuck — the same instinct I use today in a Postgres schema or a JWT round-trip.
 
@@ -13,7 +13,7 @@ Before software, I worked as a Network Engineer at Frontiir. That background tau
 ## 🚀 What I Do
 
 - Ship production frontend features in a multi-tenant HR SaaS — payroll, recruitment, appraisals, customer management, job platforms, marketing sites
-- Lead frontend architecture on a Vue / Nuxt → React 19 migration with clients live on both stacks
+- Build features on a Vue / Nuxt → React 19 migration with clients live on both stacks
 - Build full-stack side projects — schema, API, auth, permissions, and UI, end to end
 - Design permission models, GraphQL contracts, and i18n workflows that survive real production use
 - Integrate AI (structured JSON responses, per-user data controls) into learning products
@@ -22,7 +22,7 @@ Before software, I worked as a Network Engineer at Frontiir. That background tau
 
 ## 🧩 Current Focus
 
-- Leading the Better HR frontend migration to React 19 + TanStack + shadcn/ui, keeping the legacy Vue app stable for existing clients
+- Shipping features on the Better HR frontend migration to React 19 + TanStack + shadcn/ui, alongside the existing Vue app
 - Full-stack side projects covering RBAC, realtime, cloud file storage, video processing, and AI integration
 - System design and backend architecture — schema shape, contract design, permission topology
 - Learning and building with Claude Code and AI agents in real workflows
@@ -73,7 +73,7 @@ Before software, I worked as a Network Engineer at Frontiir. That background tau
 Four years at a multi-tenant HR SaaS platform used across multiple countries. Promoted from Junior to Senior after taking ownership of complex frontend modules and frontend architecture decisions.
 
 **React Migration Platform (current)**
-Leading the migration from legacy Vue 2 / Nuxt to React 19 + TypeScript + Vite. Shipping payroll, employees, leaves, attendance, KPI, performance appraisal, and recruitment / ATS flows with shared permission logic, i18n, and multi-country payroll (Pusher realtime, FX handling). Stack: TanStack Router / Query / Form / Table, Apollo Client, Tailwind v4, shadcn/ui, Storybook, Vitest.
+Shipping features on the migration from legacy Vue 2 / Nuxt to React 19 + TypeScript + Vite. Payroll, employees, leaves, attendance, KPI, performance appraisal, and recruitment / ATS flows with shared permission logic, i18n, and multi-country payroll (Pusher realtime, FX handling). Stack: TanStack Router / Query / Form / Table, Apollo Client, Tailwind v4, shadcn/ui, Storybook, Vitest.
 
 **Internal Customer Management Platform (Nuxt 3 / Vue 3)**
 Led frontend architecture for ~15 pages of customer lifecycle, contracts, expense workflow, file upload, and reporting. CASL permission system with route guards. Microsoft OAuth SSO, Xero accounting sync, and secure bank payment / salary disbursement from the frontend side.

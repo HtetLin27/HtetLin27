@@ -83,7 +83,7 @@ export function WorkReel() {
     return (
       <section id="work" className="relative w-full overflow-hidden">
         <div className="border-t border-muted/20 px-6 pt-8 pb-4 font-mono text-[11px] uppercase tracking-[0.14em] text-muted">
-          02 · Work
+          03 · Work
         </div>
         <div className="divide-y divide-muted/20">
           {PROJECTS.map((project) => (
@@ -123,7 +123,7 @@ export function WorkReel() {
       </div>
 
       <div className="pointer-events-none absolute top-6 left-6 flex items-baseline gap-2 font-mono text-[11px] uppercase tracking-[0.14em] text-muted">
-        <span>02 · Work</span>
+        <span>03 · Work</span>
         <span className="ml-3">
           <span className="tabular-nums text-bone">
             {String(displayIndex).padStart(2, "0")}
