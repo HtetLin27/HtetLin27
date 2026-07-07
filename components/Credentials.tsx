@@ -10,6 +10,10 @@ type Credential = {
 
 const CREDENTIALS: Credential[] = [
   {
+    issuer: "Education",
+    name: "B.E., Electronic and Communication Engineering (2012 — 2018)",
+  },
+  {
     issuer: "Anthropic",
     name: "Claude 101",
     verifyHref: "https://verify.skilljar.com/c/qofoukq9isre",
@@ -40,7 +44,7 @@ export function Credentials() {
       className="relative w-full px-6 py-40 sm:py-48 md:px-12"
     >
       <div className="mx-auto mb-16 max-w-6xl font-mono text-[11px] uppercase tracking-[0.14em] text-muted sm:mb-24">
-        05 · Credentials
+        05 · Credentials & Education
       </div>
       <div className="mx-auto max-w-6xl">
         <ul className="flex flex-col divide-y divide-muted/20 border-y border-muted/20 font-mono text-sm uppercase tracking-[0.14em]">
